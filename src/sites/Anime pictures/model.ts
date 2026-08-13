@@ -51,7 +51,7 @@ function completeImage(img: IImage, raw: any): IImage {
 
     // Create URL for opening in browser
     if (img.id) {
-        img.page_url = `https://anime-pictures.net/posts/${img.id}`;
+        img.page_url = `https://anime-pictures.net/posts/${img.id}?lang=en`;
     }
 
     return img;
