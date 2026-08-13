@@ -49,6 +49,11 @@ function completeImage(img: IImage, raw: any): IImage {
             .replace(/_[scb]p.\w{2,5}$/, "." + img.ext);
     }
 
+    // Create URL for opening in browser
+    if (img.id) {
+        img.page_url = `https://anime-pictures.net/posts/${img.id}`;
+    }
+
     return img;
 }
 
